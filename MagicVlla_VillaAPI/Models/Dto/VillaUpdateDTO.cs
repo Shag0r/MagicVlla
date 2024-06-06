@@ -1,12 +1,11 @@
-﻿using System.ComponentModel.DataAnnotations;
-using System.ComponentModel.DataAnnotations.Schema;
+﻿using System.ComponentModel.DataAnnotations.Schema;
+using System.ComponentModel.DataAnnotations;
 
 namespace MagicVlla_VillaAPI.Models.Dto
 {
-    public class VillaDTO
+    public class VillaUpdateDTO
     {
-        [Key]
-        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+        [Required]
         public int Id { get; set; }
         public string Name { get; set; }
         public string Description { get; set; }
@@ -15,6 +14,5 @@ namespace MagicVlla_VillaAPI.Models.Dto
         public int Occupancy { get; set; }
         public string ImageUrl { get; set; }
         public string Amenity { get; set; }
-
     }
 }

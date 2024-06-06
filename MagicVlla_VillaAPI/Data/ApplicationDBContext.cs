@@ -1,15 +1,14 @@
 ﻿using MagicVlla_VillaAPI.Models;
-using MagicVlla_VillaAPI.Models.Dto;
 using Microsoft.EntityFrameworkCore;
 
 namespace MagicVlla_VillaAPI.Data
 {
-    public class ApplicationDBContext :DbContext
+    public class ApplicationDBContext : DbContext
 
     {
-        public ApplicationDBContext(DbContextOptions<ApplicationDBContext> options):base(options)
+        public ApplicationDBContext(DbContextOptions<ApplicationDBContext> options) : base(options)
         {
-            
+
         }
         public DbSet<Villa> Villas { get; set; }
 
@@ -95,9 +94,9 @@ namespace MagicVlla_VillaAPI.Data
                     CreatedDate = DateTime.Now
 
 
-   
+
                 }
-   
+
 
                 );
         }

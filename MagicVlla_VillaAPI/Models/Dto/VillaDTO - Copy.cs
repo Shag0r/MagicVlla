@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace MagicVlla_VillaAPI.Models.Dto
 {
-    public class VillaDTO
+    public class VillaUpdateDTO
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
