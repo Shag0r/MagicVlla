@@ -117,7 +117,7 @@ namespace MagicVlla_VillaAPI.Controllers
 
 
         // now post request 
-        [HttpPost("{id:int}", Name = "CreateVillaNumber")]
+        [HttpPost("CreateVillaNumber")]
         public async Task<ActionResult<APIResponse>> CreateVillaNumber([FromBody] VillaNumberDTO villadto)
         {
             try

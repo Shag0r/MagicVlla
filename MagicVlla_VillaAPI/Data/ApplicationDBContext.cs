@@ -16,6 +16,12 @@ namespace MagicVlla_VillaAPI.Data
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            base.OnModelCreating(modelBuilder);
+            // Configure the relationship between Villa and VillaNumber
+            modelBuilder.Entity<VillaNumber>()
+                .HasOne(vn => vn.Villa)
+                .WithMany() // Assuming each Villa can have multiple VillaNumbers, adjust if needed
+                .HasForeignKey(vn => vn.villaID);
             modelBuilder.Entity<Villa>().HasData(
                 new Villa
                 {
