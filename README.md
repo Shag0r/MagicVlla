@@ -65,7 +65,7 @@ The mapping between entity models and DTOs is configured using AutoMapper in the
 
 ### Prerequisites
 
-- [.NET 6 SDK](https://dotnet.microsoft.com/download/dotnet/6.0)
+- [.NET 8 SDK](https://dotnet.microsoft.com/download/dotnet/6.0)
 - [Entity Framework Core](https://docs.microsoft.com/en-us/ef/core/)
 - [AutoMapper](https://automapper.org/)
 
