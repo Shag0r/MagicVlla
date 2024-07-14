@@ -1,0 +1,42 @@
+﻿@model MagicVilla_Web_new.Models.VM.VillaNumberCreateVM
+
+<form asp-action="CreateVillaNumber" method="post">
+    <div class="container p-3 border rounded shadow-lg">
+        <h1 class="text-primary text-center">Create Villa</h1>
+        <hr />
+        <div class="row text-success">
+            <div class="text-danger"></div>
+            <div class="col-2">
+                <label asp-for="VillaNumber.villaNo" class="control-label pt-2" style="font-size:20px;"></label>
+            </div>
+            <div class="col-10 p-2 my-1">
+                <input asp-for="VillaNumber.villaNo" class="form-control" />
+                <span asp-validation-for="VillaNumber.villaNo" class="text-danger"></span>
+            </div>
+            <div class="col-2">
+                <label asp-for="VillaNumber.villaID" class="control-label pt-2" style="font-size:20px;"></label>
+            </div>
+            <div class="col-10 p-2 my-1">
+                <select asp-for="VillaNumber.villaID" class="form-select" asp-items="@Model.villalist">
+                    <option disabled selected>Select item</option>
+                </select>
+                <span asp-validation-for="VillaNumber.villaID" class="text-danger"></span>
+            </div>
+            <div class="col-2">
+                <label asp-for="VillaNumber.SpecialDetailes" class="control-label pt-2" style="font-size:20px;"></label>
+            </div>
+            <div class="col-10 p-2 my-1">
+                <textarea asp-for="VillaNumber.SpecialDetailes" class="form-control" rows="6"></textarea>
+                <span asp-validation-for="VillaNumber.SpecialDetailes" class="text-danger"></span>
+            </div>
+            <div class="row">
+                <div class="col-5 offset-2">
+                    <a asp-action="IndexVillaNumber" asp-controller="VillaNumber" class="btn-primary btn form-control">Back to List</a>
+                </div>
+                <div class="col-5">
+                    <input type="submit" value="Create" class="btn btn-success form-control" />
+                </div>
+            </div>
+        </div>
+    </div>
+</form>

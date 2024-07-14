@@ -51,7 +51,7 @@ namespace MagicVlla_VillaAPI.Controllers
             }
             catch (Exception ex)
             {
-                _response.IsSuccess = false;
+               // _response.IsSuccess = false;
                 _response.ErrorMassages = new List<string>()
                 {
                     ex.ToString()
@@ -87,7 +87,7 @@ namespace MagicVlla_VillaAPI.Controllers
             }
             catch (Exception ex)
             {
-                _response.IsSuccess = false;
+                //_response.IsSuccess = false;
                 _response.ErrorMassages = new List<string>()
                 {
                     ex.ToString()
@@ -137,7 +137,7 @@ namespace MagicVlla_VillaAPI.Controllers
             }
             catch (Exception ex)
             {
-                _response.IsSuccess = false;
+               // _response.IsSuccess = false;
                 _response.ErrorMassages = new List<string>()
                 {
                     ex.ToString()
@@ -169,7 +169,7 @@ namespace MagicVlla_VillaAPI.Controllers
             }
             catch (Exception ex)
             {
-                _response.IsSuccess = false;
+               // _response.IsSuccess = false;
                 _response.ErrorMassages = new List<string>()
                 {
                     ex.ToString()
@@ -190,18 +190,7 @@ namespace MagicVlla_VillaAPI.Controllers
                     return BadRequest();
                 }
                 Villa model = _mapper.Map<Villa>(villaDto);
-                //Villa model = new()
-                //{
-                //    Amenity = villaDto.Amenity,
-                //    Description = villaDto.Description,
-                //    Name = villaDto.Name,
-                //    Occupancy = villaDto.Occupancy,
-                //    Rate = villaDto.Rate,
-                //    sqft = villaDto.sqft,
-                //    Id = villaDto.Id,
-                //    ImageUrl = villaDto.ImageUrl,
-
-                //};
+             
                 await _dbVilla.UpdateAsync(model);
 
                 _response.StatusCode = HttpStatusCode.NoContent;
@@ -210,7 +199,7 @@ namespace MagicVlla_VillaAPI.Controllers
             }
             catch (Exception ex)
             {
-                _response.IsSuccess = false;
+               // _response.IsSuccess = false;
                 _response.ErrorMassages = new List<string>()
                 {
                     ex.ToString()

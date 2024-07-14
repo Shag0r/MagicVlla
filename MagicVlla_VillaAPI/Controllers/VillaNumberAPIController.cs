@@ -32,14 +32,14 @@ namespace MagicVlla_VillaAPI.Controllers
         {
             try
             {
-                IEnumerable<VillaNumber> villaNumberlist = await _dbVillaNumber.GetAllAsync();
+                IEnumerable<VillaNumber> villaNumberlist = await _dbVillaNumber.GetAllAsync(includeProperties:"Villa");
                 _response.Result = _mapper.Map<List<VillaNumberDTO>>(villaNumberlist);
                 _response.StatusCode = System.Net.HttpStatusCode.OK;
                 return Ok(_response);
             }
             catch (Exception ex)
             {
-                _response.IsSuccess = false;
+               // _response.IsSuccess = false;
                 _response.ErrorMassages = new List<string>()
                 {
                     ex.ToString()
@@ -72,7 +72,7 @@ namespace MagicVlla_VillaAPI.Controllers
             }
             catch (Exception ex)
             {
-                _response.IsSuccess = false;
+               // _response.IsSuccess = false;
                 _response.ErrorMassages = new List<string>()
                 {
                     ex.ToString()
@@ -105,7 +105,7 @@ namespace MagicVlla_VillaAPI.Controllers
 
             }
             catch (Exception ex) { 
-                _response.IsSuccess=false;
+               // _response.IsSuccess=false;
                 _response.ErrorMassages = new List<string>()
                 {
                     ex.ToString()
@@ -136,7 +136,7 @@ namespace MagicVlla_VillaAPI.Controllers
             }
             catch (Exception ex)
             {
-                _response.IsSuccess = false;
+               // _response.IsSuccess = false;
                 _response.ErrorMassages = new List<string>()
                 {
                     ex.ToString()
@@ -167,7 +167,7 @@ namespace MagicVlla_VillaAPI.Controllers
             }
         
              catch (Exception ex){
-                _response.IsSuccess = false;
+              //  _response.IsSuccess = false;
                 _response.ErrorMassages = new List<string>()
                 {
                     ex.ToString()
