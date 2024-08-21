@@ -1,3 +1,21 @@
+#Magic Villa UI
+![image](https://github.com/user-attachments/assets/faf94d82-fc46-4b0c-90c3-df74f3cadf20)
+#Villa List Display
+![image](https://github.com/user-attachments/assets/88f99b68-bec8-4888-9c30-29bfd9384aec)
+#Create Villa 
+![image](https://github.com/user-attachments/assets/43f5d2ff-118f-4560-9cc7-519fc5aa9556)
+
+#Edit Villa
+![image](https://github.com/user-attachments/assets/b7fe10fd-69d3-4db5-96aa-319d07a9a8d1)
+
+#Delete Villa
+![image](https://github.com/user-attachments/assets/dd506b69-cfba-46e8-ab28-8061cbc0e8ef)
+
+#villa Number List Display
+![image](https://github.com/user-attachments/assets/19cf4ddf-ae1e-4124-bc33-f1fc9780d162)
+
+
+
 #Magic Villa Api
 ![image](https://github.com/Shag0r/MagicVlla/assets/101504353/a1177c64-ebde-432d-9113-f4e2f0574daa)
 
