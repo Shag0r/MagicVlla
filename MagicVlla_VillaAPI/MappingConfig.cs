@@ -19,6 +19,11 @@ namespace MagicVlla_VillaAPI
             CreateMap<VillaNumber,VillaNumberDTO>().ReverseMap();
             CreateMap<VillaNumber,VillaNumberCreateDTO>().ReverseMap();
             CreateMap<VillaNumber,VillaNumberUpdateDTO>().ReverseMap();
+
+            //mapping for the secure API
+            CreateMap<LocalUser, RegistrationRequestDTO>().ReverseMap();
+            CreateMap<LoginResponseDTO, LoginRequestDTO>().ReverseMap();
+
            
         }
     }
