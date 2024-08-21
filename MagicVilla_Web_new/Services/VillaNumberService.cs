@@ -43,7 +43,7 @@ namespace MagicVilla_Web_new.Services
                 {
                     Apitype = SD.ApiType.POST,
                     Data = dto,
-                    Url = villaUrl
+                    Url = $"{villaUrl}/CreateVillaNumber"
                 });
             }
             catch (Exception ex)
